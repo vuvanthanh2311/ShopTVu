@@ -1,0 +1,95 @@
+@use './mixin' as *;
+@use './variables' as *;
+@use './reset' as *;
+
+
+body{
+    background-color: #F5F5F5;
+}
+.swiperCategory{
+    background-color: #fff;
+    margin-top: 30px;
+    .swiper{
+        height: 300px;
+    }
+    .swiper-slide {
+        height:calc(50% - 10px) !important;
+        text-align: center;
+        border: 1px solid #F2F2F2;
+        cursor: pointer;
+        &:hover{
+            border: 1px solid #dbd2d2;
+        }
+    }
+    .swiper-button-prev,.swiper-button-next{
+        transform: scale(0.5);
+    }
+    .swiper-button-prev{
+
+    }
+    .swiper-button-next{
+    }
+}
+
+.swiperFlashsale{
+     .swiper{
+        height: 200px;
+    }
+     .swiper-slide {
+        background-color: rgb(233, 224, 224);
+        margin-top: 16px;
+        text-align: center;
+        
+    }
+    .swiper-button-prev,.swiper-button-next{
+        transform: scale(0.5);
+    }
+}
+
+.swiperHPMall{
+     .swiper{
+        height: 300px;
+    }
+    .swiper-slide {
+        height:calc(50% - 16px) !important;
+        background-color: rgb(233, 224, 224);
+        margin-top: 16px;
+        text-align: center;
+        
+    }
+    .swiper-button-prev,.swiper-button-next{
+        transform: scale(0.5);
+    }
+    .swiper-button-prev{
+
+    }
+    .swiper-button-next{
+    }
+}
+
+.swiperBannerHome{
+    .swiper{
+        .swiper-button-next,.swiper-button-prev{
+            display: none;
+            padding: 50px 30px;
+            margin: 0;
+            top: 50%;
+            transform: translateY(-50%) scale(0.5);
+            background-color: rgba(15, 0, 0, 0.3)
+
+        } 
+         .swiper-button-next{
+            right: -15px;
+            
+        }
+        .swiper-button-prev{
+            left: -15px;
+        }
+        &:hover{
+            .swiper-button-next,.swiper-button-prev{
+                display: flex;
+            }
+        }
+    }
+    
+}

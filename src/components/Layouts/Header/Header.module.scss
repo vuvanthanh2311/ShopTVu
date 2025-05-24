@@ -1,0 +1,30 @@
+@use "../../../styles/variables" as *;
+.navbar{
+    background-color: $primary-color;
+    width: 100vw;
+    height: 150px;
+    position: fixed;
+    z-index: 1000;
+}
+.navbarTop{}
+.topLeft{
+    background-color: rgb(183, 183, 216);
+    height: 40px;
+}
+.topRight{
+    background-color: rgb(196, 158, 180);
+    height: 40px;
+}
+.navbarMain{}
+.logo{
+    background-color: rgb(143, 207, 183);
+    height: 110px;
+}
+.search{
+    background-color: rgb(168, 209, 144);
+    height: 110px;
+}
+.cart{
+    background-color: rgb(132, 151, 114);
+    height: 110px;
+}
